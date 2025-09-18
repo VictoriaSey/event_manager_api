@@ -14,7 +14,7 @@ users_router = APIRouter()
 # oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 # Define user endpoints
 @users_router.post("/users/register", tags=["Users"])
-def register_user(
+def register_user( 
     username:Annotated[str,Form()],
     email:Annotated[EmailStr,Form()],
     password:Annotated[str,Form(min_length=8)],

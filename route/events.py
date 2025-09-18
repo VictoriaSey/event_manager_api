@@ -37,7 +37,7 @@ def post_events(
 ):
     # Upload flyer to cloudinary to get a url
     upload_result = cloudinary.uploader.upload(flyer.file)
-    print(upload_result)
+   
 
     # Insert event into database
     events_collection.insert_one(

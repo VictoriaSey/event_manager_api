@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-import os
-import cloudinary
 from route.events import events_router
 from route.users import users_router
+import os
+import cloudinary
 from dotenv import load_dotenv
 
 load_dotenv()
